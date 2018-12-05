@@ -41,4 +41,20 @@ public class WhiskyTrackerApplicationTests {
 	    List<Distillery> results = distilleryRepository.findAllDistilleriesByRegion("Highland");
     }
 
+//    @Test
+//    public void getWhiskyByAge12FromDistillery(){
+//	    List<Whisky> results = distilleryRepository.getWhiskyFromDistilleryByAge(, 12);
+//    }
+
+    @Test
+    public void getDistilleriesWithWhiskyOverAge(){
+	    List<Distillery> results = distilleryRepository.findAllDistilleryWithWhiskyOverAge(12);
+    }
+
+    // pass in a distillery
+    // pass in an age
+
+    // for each whisky in whiskies in distillery
+    //return list of whisky where whisky.age = age
+
 }
