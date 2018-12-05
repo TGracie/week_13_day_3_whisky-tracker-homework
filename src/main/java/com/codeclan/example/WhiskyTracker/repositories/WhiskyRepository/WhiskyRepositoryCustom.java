@@ -11,4 +11,7 @@ public interface WhiskyRepositoryCustom {
 
     List<Whisky> findAllWhiskyByRegion(String region);
 
+    List<Whisky> getWhiskyFromDistilleryByAge(Long id, int age);
+
+
 }
